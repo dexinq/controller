@@ -1,0 +1,29 @@
+syntax="proto3";
+
+package controller;
+
+import "github.com/dexinq/utils/global/proto/global.proto";
+
+service Controller {
+    rpc RegisterController(ControllerObj) returns (global.Response) {};
+    rpc UpdateController(ControllerObj) returns (global.Response) {};
+    rpc GetAppObject(global.Empty) returns (ControllerList) {};
+}
+
+
+message ControllerObj {
+    string Name = 1;
+    int32 Status = 2;
+    OvnController ovn = 3;
+}
+
+message OvnController {
+    string Nbip = 1;
+    string Sbip = 2;
+    string Nbport = 3;
+    string Sbport = 4;
+}
+
+message ControllerList {
+    repeated ControllerObj co = 1;
+}
