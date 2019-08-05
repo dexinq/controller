@@ -1,4 +1,4 @@
-module controller
+module github.com/dexinq/controller
 
 go 1.12
 
