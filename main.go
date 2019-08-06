@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/dexinq/controller/handler"
-	controller "github.com/dexinq/controller/proto"
+	"github.com/dexinq/utils/proto/controller"
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/broker"
 	"github.com/micro/go-micro/util/log"

@@ -4,9 +4,10 @@ import (
 	"context"
 	"encoding/json"
 
-	controller "github.com/dexinq/controller/proto"
-	"github.com/dexinq/utils/global/proto"
-	dataservice "github.com/dexinq/dataservice/proto"
+	"github.com/dexinq/utils/proto/controller"
+	"github.com/dexinq/utils/proto/dataservice"
+	"github.com/dexinq/utils/proto/global"
+
 	"github.com/google/uuid"
 	"github.com/micro/go-micro/broker"
 	"github.com/micro/go-micro/client"
